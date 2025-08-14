@@ -5,8 +5,10 @@
     <classes>
       <class name="Day1.OpenBroweser">
         <methods>
+          <include name="closeBrowser"/>
+          <include name="loginIntoApplication"/>
+          <include name="verifyLoginPage"/>
           <include name="openBrowsser"/>
-          <include name="loginToApplication"/>
         </methods>
       </class> <!-- Day1.OpenBroweser -->
     </classes>
