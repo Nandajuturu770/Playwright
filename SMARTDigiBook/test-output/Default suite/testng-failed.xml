@@ -6,7 +6,7 @@
       <class name="locators.GetLocators">
         <methods>
           <include name="openBrowser"/>
-          <include name="loginIntoApplication"/>
+          <include name="verifyCreateAccount"/>
         </methods>
       </class> <!-- locators.GetLocators -->
     </classes>

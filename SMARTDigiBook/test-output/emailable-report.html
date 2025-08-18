@@ -9,19 +9,19 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">50,687</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">45,452</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">locators.GetLocators</td><td><a href="#m0">openBrowser</a></td><td rowspan="1">1755452349595</td><td rowspan="1">50610</td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">locators.GetLocators</td><td><a href="#m1">loginIntoApplication</a></td><td rowspan="1">1755452400252</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">locators.GetLocators</td><td><a href="#m0">openBrowser</a></td><td rowspan="1">1755496579557</td><td rowspan="1">45403</td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">locators.GetLocators</td><td><a href="#m1">verifyCreateAccount</a></td><td rowspan="1">1755496624987</td><td rowspan="1">0</td></tr></tbody>
 </table>
 <h2>Default test</h2><h3 id="m0">locators.GetLocators#openBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">com.microsoft.playwright.TimeoutError: Error {
   message=&apos;Timeout 30000ms exceeded.
   name=&apos;TimeoutError
   stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\nanda\AppData\Local\Temp\playwright-java-13627575178581451671\package\lib\server\progress.js:76:26)
-    at Frame.goto (C:\Users\nanda\AppData\Local\Temp\playwright-java-13627575178581451671\package\lib\server\frames.js:499:23)
-    at FrameDispatcher.goto (C:\Users\nanda\AppData\Local\Temp\playwright-java-13627575178581451671\package\lib\server\dispatchers\frameDispatcher.js:70:132)
-    at FrameDispatcher._handleCommand (C:\Users\nanda\AppData\Local\Temp\playwright-java-13627575178581451671\package\lib\server\dispatchers\dispatcher.js:88:40)
-    at DispatcherConnection.dispatch (C:\Users\nanda\AppData\Local\Temp\playwright-java-13627575178581451671\package\lib\server\dispatchers\dispatcher.js:309:39)
+    at ProgressController.run (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\progress.js:76:26)
+    at Frame.goto (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\frames.js:499:23)
+    at FrameDispatcher.goto (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\frameDispatcher.js:70:132)
+    at FrameDispatcher._handleCommand (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\dispatcher.js:309:39)
 }
 Call log:
 -   - navigating to &quot;https://reader.smartdigibook.com/&quot;, waiting until &quot;load&quot;
@@ -34,7 +34,7 @@ Call log:
 	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:918)
 	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:42)
 	at com.microsoft.playwright.Page.navigate(Page.java:5491)
-	at locators.GetLocators.openBrowser(GetLocators.java:36)
+	at locators.GetLocators.openBrowser(GetLocators.java:42)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -65,11 +65,11 @@ Caused by: com.microsoft.playwright.TimeoutError: Error {
   message=&apos;Timeout 30000ms exceeded.
   name=&apos;TimeoutError
   stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\nanda\AppData\Local\Temp\playwright-java-13627575178581451671\package\lib\server\progress.js:76:26)
-    at Frame.goto (C:\Users\nanda\AppData\Local\Temp\playwright-java-13627575178581451671\package\lib\server\frames.js:499:23)
-    at FrameDispatcher.goto (C:\Users\nanda\AppData\Local\Temp\playwright-java-13627575178581451671\package\lib\server\dispatchers\frameDispatcher.js:70:132)
-    at FrameDispatcher._handleCommand (C:\Users\nanda\AppData\Local\Temp\playwright-java-13627575178581451671\package\lib\server\dispatchers\dispatcher.js:88:40)
-    at DispatcherConnection.dispatch (C:\Users\nanda\AppData\Local\Temp\playwright-java-13627575178581451671\package\lib\server\dispatchers\dispatcher.js:309:39)
+    at ProgressController.run (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\progress.js:76:26)
+    at Frame.goto (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\frames.js:499:23)
+    at FrameDispatcher.goto (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\frameDispatcher.js:70:132)
+    at FrameDispatcher._handleCommand (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\dispatcher.js:309:39)
 }
 Call log:
 -   - navigating to &quot;https://reader.smartdigibook.com/&quot;, waiting until &quot;load&quot;
@@ -79,15 +79,15 @@ Call log:
 	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
 	... 33 more
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">locators.GetLocators#loginIntoApplication</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">com.microsoft.playwright.TimeoutError: Error {
+<h3 id="m1">locators.GetLocators#verifyCreateAccount</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">com.microsoft.playwright.TimeoutError: Error {
   message=&apos;Timeout 30000ms exceeded.
   name=&apos;TimeoutError
   stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\nanda\AppData\Local\Temp\playwright-java-13627575178581451671\package\lib\server\progress.js:76:26)
-    at Frame.goto (C:\Users\nanda\AppData\Local\Temp\playwright-java-13627575178581451671\package\lib\server\frames.js:499:23)
-    at FrameDispatcher.goto (C:\Users\nanda\AppData\Local\Temp\playwright-java-13627575178581451671\package\lib\server\dispatchers\frameDispatcher.js:70:132)
-    at FrameDispatcher._handleCommand (C:\Users\nanda\AppData\Local\Temp\playwright-java-13627575178581451671\package\lib\server\dispatchers\dispatcher.js:88:40)
-    at DispatcherConnection.dispatch (C:\Users\nanda\AppData\Local\Temp\playwright-java-13627575178581451671\package\lib\server\dispatchers\dispatcher.js:309:39)
+    at ProgressController.run (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\progress.js:76:26)
+    at Frame.goto (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\frames.js:499:23)
+    at FrameDispatcher.goto (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\frameDispatcher.js:70:132)
+    at FrameDispatcher._handleCommand (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\dispatcher.js:309:39)
 }
 Call log:
 -   - navigating to &quot;https://reader.smartdigibook.com/&quot;, waiting until &quot;load&quot;
@@ -100,7 +100,7 @@ Call log:
 	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:918)
 	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:42)
 	at com.microsoft.playwright.Page.navigate(Page.java:5491)
-	at locators.GetLocators.openBrowser(GetLocators.java:36)
+	at locators.GetLocators.openBrowser(GetLocators.java:42)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -131,11 +131,11 @@ Caused by: com.microsoft.playwright.TimeoutError: Error {
   message=&apos;Timeout 30000ms exceeded.
   name=&apos;TimeoutError
   stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\nanda\AppData\Local\Temp\playwright-java-13627575178581451671\package\lib\server\progress.js:76:26)
-    at Frame.goto (C:\Users\nanda\AppData\Local\Temp\playwright-java-13627575178581451671\package\lib\server\frames.js:499:23)
-    at FrameDispatcher.goto (C:\Users\nanda\AppData\Local\Temp\playwright-java-13627575178581451671\package\lib\server\dispatchers\frameDispatcher.js:70:132)
-    at FrameDispatcher._handleCommand (C:\Users\nanda\AppData\Local\Temp\playwright-java-13627575178581451671\package\lib\server\dispatchers\dispatcher.js:88:40)
-    at DispatcherConnection.dispatch (C:\Users\nanda\AppData\Local\Temp\playwright-java-13627575178581451671\package\lib\server\dispatchers\dispatcher.js:309:39)
+    at ProgressController.run (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\progress.js:76:26)
+    at Frame.goto (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\frames.js:499:23)
+    at FrameDispatcher.goto (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\frameDispatcher.js:70:132)
+    at FrameDispatcher._handleCommand (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\dispatcher.js:309:39)
 }
 Call log:
 -   - navigating to &quot;https://reader.smartdigibook.com/&quot;, waiting until &quot;load&quot;
