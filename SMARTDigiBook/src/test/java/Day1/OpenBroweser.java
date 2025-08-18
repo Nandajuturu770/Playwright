@@ -20,6 +20,8 @@ public class OpenBroweser {
 	public Playwright playwright;
 	public Browser browser;
 	public Page page;
+	
+	
 
 	@BeforeClass
 	public void openBrowsser() {

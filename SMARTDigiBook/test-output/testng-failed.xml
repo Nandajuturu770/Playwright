@@ -3,14 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Day1.OpenBroweser">
+      <class name="locators.GetLocators">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="loginIntoApplication"/>
-          <include name="verifyLoginPage"/>
-          <include name="openBrowsser"/>
+          <include name="openBrowser"/>
+          <include name="verifyCreateAccount"/>
         </methods>
-      </class> <!-- Day1.OpenBroweser -->
+      </class> <!-- locators.GetLocators -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

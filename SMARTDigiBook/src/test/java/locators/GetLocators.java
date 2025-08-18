@@ -1,0 +1,115 @@
+package locators;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import com.microsoft.playwright.Browser;
+import com.microsoft.playwright.Browser.NewContextOptions;
+import com.microsoft.playwright.BrowserContext;
+import com.microsoft.playwright.BrowserType;
+import com.microsoft.playwright.BrowserType.LaunchOptions;
+import com.microsoft.playwright.Locator;
+import com.microsoft.playwright.Page;
+import com.microsoft.playwright.Page.GetByRoleOptions;
+import com.microsoft.playwright.Page.WaitForLoadStateOptions;
+import com.microsoft.playwright.Playwright;
+import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
+import com.microsoft.playwright.options.AriaRole;
+
+public class GetLocators {
+
+	Playwright playwright;
+	BrowserType browserType;
+	BrowserContext browserContext;
+	LaunchOptions launchOptions;
+	Browser browser;
+	Page page;
+
+	String URL = "https://reader.smartdigibook.com/";
+
+	@BeforeClass
+	public void openBrowser() {
+		playwright = Playwright.create();
+		browserType = playwright.chromium();
+		launchOptions = new LaunchOptions();
+		launchOptions.setHeadless(false);
+		browser = browserType.launch(launchOptions);
+		browserContext = browser.newContext();
+		page = browserContext.newPage();
+		page.navigate(URL);
+	}
+
+	@Test
+	public void verifyCreateAccount() {
+		// locators
+		Locator createAccountBtn = page.locator("//button[text()='Create New Account']");
+		createAccountBtn.click();
+		Locator smartDigiBookIcon = page.locator("a[href='/login']>img");
+		smartDigiBookIcon.waitFor();
+		Locator createAccountHeadingTxt = page.getByRole(AriaRole.HEADING, new GetByRoleOptions().setName("Create Your Account To Join SMART DigiBook"));
+		Locator createAccountMessageTxt = page.locator("p.create-account-message");
+		Locator firstNameTxtfd = page.locator("id=firstName");
+		Locator lastNameTxtfd = page.locator("id=lastName");
+		Locator securityPinTxtfd = page.locator("id=securityPin");
+		Locator securityPinMessageTxt = page.locator("p.useDigitsNumbersText");
+		Locator emailTxtfd = page.locator("id=email");
+		Locator contactNumberTxtfd = page.locator("id=contactNumber");
+		Locator getOtpBtn = page.getByRole(AriaRole.BUTTON, new GetByRoleOptions().setName("Get OTP"));
+		Locator stateDropdown = page.locator("div#state");
+		stateDropdown.click();
+		List<Locator> stateValues = page.getByRole(AriaRole.LISTITEM).all();
+		stateValues.forEach(locator -> {System.out.println(locator.textContent());});
+		stateValues.get(0).click();
+		Locator cityDropdown = page.locator("div#city");
+		cityDropdown.click();
+		Locator cityValues = page.getByRole(AriaRole.LISTITEM);
+		int citiesCount = cityValues.count();
+		for (int i = 0; i < citiesCount; i++) {
+			Locator city = cityValues.nth(i);
+			System.out.println(city.textContent());			
+		}
+		cityValues.nth(0);
+		Locator checkbox = page.locator("id=agreement");
+		Locator agreeMessage = page.locator("//input[@id='agreement']/../../span").last();
+		Locator privacyLnk = page.locator("a.anchorTagPrivacy");
+		Locator continueBtn = page.locator("div.registration-loginButton");
+		Locator havingTroubleTxt = page.locator("p.havingTroubleText").first();
+		Locator havingTroubleAnimation = page.locator("p.havingTroubleText+div>img");
+		Locator alreadyHaveAccountTxt = page.locator("p.havingTroubleText").last();
+		Locator loginLnk = page.locator("span.how-to-use-link");
+		// validation
+		isVisibled(smartDigiBookIcon);
+		isVisibled(createAccountHeadingTxt);
+		isVisibled(createAccountMessageTxt);
+		isVisibled(firstNameTxtfd);
+		firstNameTxtfd.fill("Nandakiran");
+		isVisibled(lastNameTxtfd);
+		lastNameTxtfd.fill("Juturu");
+		isVisibled(securityPinTxtfd);
+		securityPinTxtfd.fill("111111");
+		isVisibled(securityPinMessageTxt);
+		isVisibled(emailTxtfd);
+		emailTxtfd.fill("smartdugubiik@gmail.com");
+		isVisibled(contactNumberTxtfd);
+		contactNumberTxtfd.fill("7657657657");
+		isVisibled(getOtpBtn);
+		isVisibled(checkbox);
+		checkbox.click();
+		isVisibled(agreeMessage);
+		isVisibled(privacyLnk);
+		isVisibled(continueBtn);
+		isVisibled(havingTroubleTxt);
+		isVisibled(havingTroubleAnimation);
+		isVisibled(alreadyHaveAccountTxt);
+		isVisibled(loginLnk);
+		loginLnk.click();
+	}
+
+	public void isVisibled(Locator locator) {
+		assertThat(locator).isVisible();
+	}
+
+}

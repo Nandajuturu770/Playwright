@@ -9,11 +9,141 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">36,141</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">45,452</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">Day1.OpenBroweser</td><td><a href="#m0">loginIntoApplication</a></td><td rowspan="1">1755199705153</td><td rowspan="1">4500</td></tr><tr class="passedeven"><td><a href="#m1">verifyLoginPage</a></td><td rowspan="1">1755199704964</td><td rowspan="1">176</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">locators.GetLocators</td><td><a href="#m0">openBrowser</a></td><td rowspan="1">1755496579557</td><td rowspan="1">45403</td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">locators.GetLocators</td><td><a href="#m1">verifyCreateAccount</a></td><td rowspan="1">1755496624987</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">Day1.OpenBroweser#loginIntoApplication</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Day1.OpenBroweser#verifyLoginPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">locators.GetLocators#openBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\progress.js:76:26)
+    at Frame.goto (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\frames.js:499:23)
+    at FrameDispatcher.goto (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\frameDispatcher.js:70:132)
+    at FrameDispatcher._handleCommand (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - navigating to &quot;https://reader.smartdigibook.com/&quot;, waiting until &quot;load&quot;
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:419)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:918)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:42)
+	at com.microsoft.playwright.Page.navigate(Page.java:5491)
+	at locators.GetLocators.openBrowser(GetLocators.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\progress.js:76:26)
+    at Frame.goto (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\frames.js:499:23)
+    at FrameDispatcher.goto (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\frameDispatcher.js:70:132)
+    at FrameDispatcher._handleCommand (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - navigating to &quot;https://reader.smartdigibook.com/&quot;, waiting until &quot;load&quot;
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 33 more
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">locators.GetLocators#verifyCreateAccount</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\progress.js:76:26)
+    at Frame.goto (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\frames.js:499:23)
+    at FrameDispatcher.goto (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\frameDispatcher.js:70:132)
+    at FrameDispatcher._handleCommand (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - navigating to &quot;https://reader.smartdigibook.com/&quot;, waiting until &quot;load&quot;
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:419)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:918)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:42)
+	at com.microsoft.playwright.Page.navigate(Page.java:5491)
+	at locators.GetLocators.openBrowser(GetLocators.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\progress.js:76:26)
+    at Frame.goto (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\frames.js:499:23)
+    at FrameDispatcher.goto (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\frameDispatcher.js:70:132)
+    at FrameDispatcher._handleCommand (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - navigating to &quot;https://reader.smartdigibook.com/&quot;, waiting until &quot;load&quot;
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 33 more
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
