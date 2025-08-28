@@ -17,7 +17,6 @@ public class BaseTest {
 	private Browser browser;
 	public static Page page;
 
-
 	@BeforeClass
 	public void openBrowsser() {
 		playwright = Playwright.create();

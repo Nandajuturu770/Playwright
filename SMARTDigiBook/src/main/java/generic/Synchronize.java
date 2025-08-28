@@ -24,7 +24,6 @@ public class Synchronize {
 	    page.waitForLoadState(LoadState.NETWORKIDLE, new Page.WaitForLoadStateOptions().setTimeout(seconds*1000));
 	}
 
-
 	/**
 	 * @description this is method is used to wait till element is visible till 15 seconds.
 	 * @param locator <code>Locator</code>

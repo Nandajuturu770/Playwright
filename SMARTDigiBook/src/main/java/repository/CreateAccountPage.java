@@ -65,7 +65,6 @@ public class CreateAccountPage extends WebElementActions{
 	 * @description this method is used to verify elements of create account page.
 	 */
 	public void verifyCreateAccountElements() {
-		click(createAccountBtn);
 		waitTillElementVisible(createAccountHeadingTxt);
 		isDisplayed(smartDigiBookIcon);
 		isDisplayed(createAccountHeadingTxt);
@@ -97,5 +96,4 @@ public class CreateAccountPage extends WebElementActions{
 		waitForPageLoad(page,30);
 		isDisplayed(createAccountBtn);
 	}
-
 }

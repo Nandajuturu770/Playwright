@@ -3,8 +3,8 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="locators.GetLocators"/>
-      <class name="Day1.OpenBroweser"/>
+      <class name="tests.LoginPageTests"/>
+      <class name="tests.CreateAccountTests"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

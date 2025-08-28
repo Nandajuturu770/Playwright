@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\nanda\AppData\Local\Temp\testng-eclipse-1342268169\testng-customsuite.xml</span>
+                    <span>C:\Users\nanda\AppData\Local\Temp\testng-eclipse-1520847505\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,6 +104,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="tests.CreateAccountTests" class="method navigator-link" hash-for-method="verifyCreateAccountElements">verifyCreateAccountElements</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="tests.CreateAccountTests" class="method navigator-link" hash-for-method="verifyResetPinElements">verifyResetPinElements</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -133,12 +138,21 @@
 (Verify that user is able to see all fields of create account page.)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyResetPinElements">
+                  </a> <!-- verifyResetPinElements -->
+                  <span class="method-name">verifyResetPinElements</span>
+                  <em>
+(Verify that user is able to see all fields of reset pin page.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\nanda\AppData\Local\Temp\testng-eclipse-1342268169\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\nanda\AppData\Local\Temp\testng-eclipse-1520847505\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -187,16 +201,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyCreateAccountElements')
 data.setCell(0, 2, 'tests.CreateAccountTests')
-data.setCell(0, 3, 3943);
+data.setCell(0, 3, 3794);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyResetPinElements')
+data.setCell(1, 2, 'tests.CreateAccountTests')
+data.setCell(1, 3, 2960);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -229,15 +247,19 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">initiazition</span>
-                <span class="method-start">23485 ms</span>
+                <span class="method-start">24970 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifyCreateAccountElements</span>
-                <span class="method-start">23545 ms</span>
+                <span class="method-start">25047 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyResetPinElements</span>
+                <span class="method-start">28858 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">27492 ms</span>
+                <span class="method-start">31820 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

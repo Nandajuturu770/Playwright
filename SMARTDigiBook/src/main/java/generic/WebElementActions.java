@@ -49,7 +49,5 @@ public class WebElementActions extends Synchronize{
 			softAssert.fail(locator+" element is not found, please check below :: \n"+exception.getMessage());
 			softAssert.assertAll();
 		}
-	}
-	
-	
+	}	
 }

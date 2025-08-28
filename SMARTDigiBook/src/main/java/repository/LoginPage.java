@@ -41,7 +41,6 @@ public class LoginPage extends WebElementActions{
 		this.navNeetImg = page.locator("div.bg");
 	}
 
-
 	/**
 	 * @description this method is used to verify login page elements.
 	 */
@@ -72,11 +71,18 @@ public class LoginPage extends WebElementActions{
 		passwordTxtfd.all().forEach(locator -> {int i = 0;enter(locator, password.charAt(i++)+"");});
 
 	}
-	
+
 	/**
-	 * @description this method is used to navigate to create account page
+	 * @description this method is used to navigate to create account page.
 	 */
 	public void navigateCreateAccountPage() {
 		click(createAccountBtn);
+	}
+
+	/**
+	 * @description this method is used to navigate to reset pin page.
+	 */
+	public void navigateResetPinPage() {
+		click(forgetPinLnk);
 	}
 }

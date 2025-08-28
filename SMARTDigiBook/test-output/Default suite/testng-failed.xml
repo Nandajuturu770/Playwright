@@ -6,9 +6,9 @@
       <class name="tests.CreateAccountTests">
         <methods>
           <include name="closeBrowser"/>
-          <include name="verifyCreateAccountElements"/>
           <include name="initiazition"/>
           <include name="openBrowsser"/>
+          <include name="verifyResetPinElements"/>
         </methods>
       </class> <!-- tests.CreateAccountTests -->
     </classes>
