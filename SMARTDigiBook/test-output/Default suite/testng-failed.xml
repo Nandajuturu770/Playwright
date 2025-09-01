@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.CreateAccountTests">
+      <class name="tests.LoginPageTests">
         <methods>
           <include name="closeBrowser"/>
-          <include name="initiazition"/>
           <include name="openBrowsser"/>
-          <include name="verifyResetPinElements"/>
+          <include name="loginIntoApplication"/>
+          <include name="intialization"/>
         </methods>
-      </class> <!-- tests.CreateAccountTests -->
+      </class> <!-- tests.LoginPageTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

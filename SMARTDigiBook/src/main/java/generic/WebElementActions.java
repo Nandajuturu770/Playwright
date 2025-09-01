@@ -4,6 +4,8 @@ import org.testng.asserts.SoftAssert;
 
 import com.microsoft.playwright.Locator;
 
+import io.qameta.allure.Allure;
+
 public class WebElementActions extends Synchronize{
 
 	public static SoftAssert softAssert = Synchronize.softAssert;
@@ -16,9 +18,10 @@ public class WebElementActions extends Synchronize{
 	public static boolean isDisplayed(Locator locator) {
 		try{
 			softAssert.assertEquals(true, locator.isDisabled(), locator+" element is not found");
+			Allure.step(locator +" is displayed.");
 			return true;
 		}catch (Exception exception) {
-			softAssert.fail(locator+" element is not found");
+			softAssert.fail(locator+" element is not found.");
 		}
 		softAssert.assertAll();
 		return false;
@@ -31,6 +34,17 @@ public class WebElementActions extends Synchronize{
 	public static void click(Locator locator) {
 		try{
 			locator.click();
+			Allure.step(locator+" is clicked.");
+		}catch (Exception exception) {
+			softAssert.fail(locator+" element is not found, please check below :: \n"+exception.getMessage());
+			softAssert.assertAll();
+		}
+	}
+	
+	public static void doubleClick(Locator locator) {
+		try{
+			locator.dblclick();;
+			Allure.step(locator+" is double clicked.");
 		}catch (Exception exception) {
 			softAssert.fail(locator+" element is not found, please check below :: \n"+exception.getMessage());
 			softAssert.assertAll();
@@ -45,6 +59,7 @@ public class WebElementActions extends Synchronize{
 	public static void enter(Locator locator, String input) {
 		try{
 			locator.fill(input);
+			Allure.step(input +" value is enter into "+locator+" field.");
 		}catch (Exception exception) {
 			softAssert.fail(locator+" element is not found, please check below :: \n"+exception.getMessage());
 			softAssert.assertAll();

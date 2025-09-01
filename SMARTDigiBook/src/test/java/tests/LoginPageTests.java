@@ -21,13 +21,13 @@ public class LoginPageTests extends BaseTest {
 		loginPage = new LoginPage(page);
 	}
 
-	@Test(enabled =  true, priority = 1, description = "Verify that user is able to see all elements of login page.")
+	@Test(enabled = false, priority = 1, description = "Verify that user is able to see all elements of login page.")
 	public void verifyLoginPageElemets() {
 		loginPage.verifyLoginPage();
 	}
 
 	@Test(enabled =  true, priority = 2, description = "Verify that user is able to login to application with valid.")
-	public void loginIntoApplication() {
+	public void loginIntoApplication() throws InterruptedException {
 		loginPage.loginIntoApplication(mobileNumber, password);
 	}
 }

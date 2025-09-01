@@ -69,7 +69,7 @@ public class LoginPage extends WebElementActions{
 	public void loginIntoApplication(String mobileNumber, String password) {
 		enter(mobileTxtfd, mobileNumber);
 		passwordTxtfd.all().forEach(locator -> {int i = 0;enter(locator, password.charAt(i++)+"");});
-
+		doubleClick(loginBtn);
 	}
 
 	/**
