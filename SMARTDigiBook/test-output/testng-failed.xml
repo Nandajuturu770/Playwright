@@ -3,15 +3,6 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="tests.CreateAccountTests">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="verifyCreateAccountElements"/>
-          <include name="initiazition"/>
-          <include name="openBrowsser"/>
-          <include name="verifyResetPinElements"/>
-        </methods>
-      </class> <!-- tests.CreateAccountTests -->
       <class name="tests.LoginPageTests">
         <methods>
           <include name="closeBrowser"/>

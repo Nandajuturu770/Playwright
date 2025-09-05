@@ -1,29 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-01T12:42:12 IST" name="Default suite" finished-at="2025-09-01T12:42:37 IST" duration-ms="25067">
+  <suite started-at="2025-09-04T17:56:27 IST" name="Suite" finished-at="2025-09-04T17:57:52 IST" duration-ms="85067">
     <groups>
     </groups>
-    <test started-at="2025-09-01T12:42:12 IST" name="Default test" finished-at="2025-09-01T12:42:37 IST" duration-ms="25067">
-      <class name="tests.LoginPageTests">
-        <test-method is-config="true" signature="openBrowsser()[pri:0, instance:tests.LoginPageTests@61544ae6]" started-at="2025-09-01T12:42:12 IST" name="openBrowsser" finished-at="2025-09-01T12:42:36 IST" duration-ms="23799" status="PASS">
+    <test started-at="2025-09-04T17:56:27 IST" name="Test" finished-at="2025-09-04T17:57:52 IST" duration-ms="85067">
+      <class name="tests.CreateAccountTests">
+        <test-method is-config="true" signature="openBrowsser()[pri:0, instance:tests.CreateAccountTests@38089a5a]" started-at="2025-09-04T17:57:33 IST" name="openBrowsser" finished-at="2025-09-04T17:57:42 IST" duration-ms="9583" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowsser -->
-        <test-method is-config="true" signature="intialization()[pri:0, instance:tests.LoginPageTests@61544ae6]" started-at="2025-09-01T12:42:36 IST" name="intialization" finished-at="2025-09-01T12:42:36 IST" duration-ms="14" status="PASS">
+        <test-method is-config="true" signature="initiazition()[pri:0, instance:tests.CreateAccountTests@38089a5a]" started-at="2025-09-04T17:57:42 IST" name="initiazition" finished-at="2025-09-04T17:57:42 IST" duration-ms="41" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiazition -->
+        <test-method signature="verifyCreateAccountElements()[pri:1, instance:tests.CreateAccountTests@38089a5a]" started-at="2025-09-04T17:57:42 IST" name="verifyCreateAccountElements" description="Verify that user is able to see all fields of create account page." finished-at="2025-09-04T17:57:46 IST" duration-ms="4260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateAccountElements -->
+        <test-method signature="verifyResetPinElements()[pri:2, instance:tests.CreateAccountTests@38089a5a]" started-at="2025-09-04T17:57:46 IST" name="verifyResetPinElements" description="Verify that user is able to see all fields of reset pin page." finished-at="2025-09-04T17:57:50 IST" duration-ms="3626" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyResetPinElements -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.CreateAccountTests@38089a5a]" started-at="2025-09-04T17:57:50 IST" name="closeBrowser" finished-at="2025-09-04T17:57:52 IST" duration-ms="1980" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.CreateAccountTests -->
+      <class name="tests.LoginPageTests">
+        <test-method is-config="true" signature="openBrowsser()[pri:0, instance:tests.LoginPageTests@5ba88be8]" started-at="2025-09-04T17:56:27 IST" name="openBrowsser" finished-at="2025-09-04T17:57:01 IST" duration-ms="34198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowsser -->
+        <test-method is-config="true" signature="intialization()[pri:0, instance:tests.LoginPageTests@5ba88be8]" started-at="2025-09-04T17:57:01 IST" name="intialization" finished-at="2025-09-04T17:57:01 IST" duration-ms="104" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intialization -->
-        <test-method signature="loginIntoApplication()[pri:2, instance:tests.LoginPageTests@61544ae6]" started-at="2025-09-01T12:42:36 IST" name="loginIntoApplication" description="Verify that user is able to login to application with valid." finished-at="2025-09-01T12:42:37 IST" duration-ms="431" status="PASS">
+        <test-method signature="verifyLoginPageElemets()[pri:1, instance:tests.LoginPageTests@5ba88be8]" started-at="2025-09-04T17:57:01 IST" name="verifyLoginPageElemets" description="Verify that user is able to see all elements of login page." finished-at="2025-09-04T17:57:01 IST" duration-ms="162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageElemets -->
+        <test-method signature="loginIntoApplication()[pri:2, instance:tests.LoginPageTests@5ba88be8]" started-at="2025-09-04T17:57:02 IST" name="loginIntoApplication" description="Verify that user is able to login to application with valid." finished-at="2025-09-04T17:57:32 IST" duration-ms="30327" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Locator@img.logo element is not found expected [false] but found [true],
+Locator@img.logo+p element is not found expected [false] but found [true],
+Locator@div.india-flag-div>img element is not found expected [false] but found [true],
+Locator@div.india-flag-div>p element is not found expected [false] but found [true],
+Locator@//span[text()='Login PIN ']/span element is not found expected [false] but found [true],
+Locator@id=contactNumber element is not found expected [false] but found [true],
+Locator@input.otp-input >> nth=0 element is not found expected [false] but found [true],
+Locator@input.otp-input >> nth=1 element is not found expected [false] but found [true],
+Locator@input.otp-input >> nth=2 element is not found expected [false] but found [true],
+Locator@input.otp-input >> nth=3 element is not found expected [false] but found [true],
+Locator@input.otp-input >> nth=4 element is not found expected [false] but found [true],
+Locator@input.otp-input >> nth=5 element is not found expected [false] but found [true],
+Locator@id=btn_login element is not found expected [false] but found [true],
+Locator@span.forgot-pin > a element is not found expected [false] but found [true],
+Locator@//*[contains(text(),'Are you ')] element is not found expected [false] but found [true],
+Locator@//button[text()='Create New Account'] element is not found expected [false] but found [true],
+Locator@p.newUserText element is not found expected [false] but found [true],
+Locator@a.howToUseText element is not found expected [false] but found [true],
+Locator@div.bg element is not found expected [false] but found [true],
+Locator@internal:text="Incorrect username or password."i element is not found.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Locator@img.logo element is not found expected [false] but found [true],
+Locator@img.logo+p element is not found expected [false] but found [true],
+Locator@div.india-flag-div>img element is not found expected [false] but found [true],
+Locator@div.india-flag-div>p element is not found expected [false] but found [true],
+Locator@//span[text()='Login PIN ']/span element is not found expected [false] but found [true],
+Locator@id=contactNumber element is not found expected [false] but found [true],
+Locator@input.otp-input >> nth=0 element is not found expected [false] but found [true],
+Locator@input.otp-input >> nth=1 element is not found expected [false] but found [true],
+Locator@input.otp-input >> nth=2 element is not found expected [false] but found [true],
+Locator@input.otp-input >> nth=3 element is not found expected [false] but found [true],
+Locator@input.otp-input >> nth=4 element is not found expected [false] but found [true],
+Locator@input.otp-input >> nth=5 element is not found expected [false] but found [true],
+Locator@id=btn_login element is not found expected [false] but found [true],
+Locator@span.forgot-pin > a element is not found expected [false] but found [true],
+Locator@//*[contains(text(),'Are you ')] element is not found expected [false] but found [true],
+Locator@//button[text()='Create New Account'] element is not found expected [false] but found [true],
+Locator@p.newUserText element is not found expected [false] but found [true],
+Locator@a.howToUseText element is not found expected [false] but found [true],
+Locator@div.bg element is not found expected [false] but found [true],
+Locator@internal:text="Incorrect username or password."i element is not found.
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at generic.WebElementActions.isDisplayed(WebElementActions.java:26)
+at repository.LoginPage.loginIntoApplication(LoginPage.java:79)
+at tests.LoginPageTests.loginIntoApplication(LoginPageTests.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginIntoApplication -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.LoginPageTests@61544ae6]" started-at="2025-09-01T12:42:37 IST" name="closeBrowser" finished-at="2025-09-01T12:42:37 IST" duration-ms="619" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.LoginPageTests@5ba88be8]" started-at="2025-09-04T17:57:32 IST" name="closeBrowser" finished-at="2025-09-04T17:57:33 IST" duration-ms="654" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- tests.LoginPageTests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

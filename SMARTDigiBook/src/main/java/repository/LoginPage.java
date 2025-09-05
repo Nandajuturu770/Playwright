@@ -1,9 +1,12 @@
 package repository;
 
+import org.testng.Assert;
+
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 
 import generic.WebElementActions;
+import io.qameta.allure.Allure;
 
 public class LoginPage extends WebElementActions{
 
@@ -22,6 +25,7 @@ public class LoginPage extends WebElementActions{
 	private Locator haveYouAccount;
 	private Locator howToUseLnk;
 	private Locator navNeetImg;
+	private Locator incorrectUsernameOrPasswordToaster;
 
 	//* locators initialization
 	public LoginPage(Page page) {
@@ -39,6 +43,7 @@ public class LoginPage extends WebElementActions{
 		this.haveYouAccount = page.locator("p.newUserText");
 		this.howToUseLnk = page.locator("a.howToUseText");
 		this.navNeetImg = page.locator("div.bg");
+		this.incorrectUsernameOrPasswordToaster = page.getByText("Incorrect username or password.");
 	}
 
 	/**
@@ -69,7 +74,14 @@ public class LoginPage extends WebElementActions{
 	public void loginIntoApplication(String mobileNumber, String password) {
 		enter(mobileTxtfd, mobileNumber);
 		passwordTxtfd.all().forEach(locator -> {int i = 0;enter(locator, password.charAt(i++)+"");});
-		doubleClick(loginBtn);
+		click(loginBtn);
+		click(loginBtn);
+		if(isDisplayed(incorrectUsernameOrPasswordToaster)){
+			Allure.step("user credential is wrong -> mobile number :: "+mobileNumber+", password :: "+password);
+			Assert.fail();
+		}else {
+			Allure.step("user is logined into application successfullu...");
+		}
 	}
 
 	/**

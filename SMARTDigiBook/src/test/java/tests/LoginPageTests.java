@@ -1,27 +1,34 @@
 package tests;
 
+import java.io.IOException;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.microsoft.playwright.Page;
 
 import generic.BaseTest;
+import generic.DataReader;
 import repository.LoginPage;
 
 public class LoginPageTests extends BaseTest {
 
 	private Page page;
 	LoginPage loginPage;
-	String mobileNumber = "7702425817";
-	String password = "111111";
+	DataReader dataReader;
+	String mobileNumber;
+	String password;
 
 	@BeforeClass(alwaysRun = true)
-	public void intialization() {
+	public void intialization() throws IOException {
 		this.page = BaseTest.page;
 		loginPage = new LoginPage(page);
+		dataReader = new DataReader("./src/main/resources/config.properties");
+		mobileNumber = dataReader.getValueOfKey("prod.username");
+		password = dataReader.getValueOfKey("prod.password");
 	}
 
-	@Test(enabled = false, priority = 1, description = "Verify that user is able to see all elements of login page.")
+	@Test(enabled = true, priority = 1, description = "Verify that user is able to see all elements of login page.")
 	public void verifyLoginPageElemets() {
 		loginPage.verifyLoginPage();
 	}

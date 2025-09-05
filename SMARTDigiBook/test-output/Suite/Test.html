@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/3</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Aug 29 17:51:27 IST 2025</td>
+<td>Started on:</td><td>Thu Sep 04 17:56:27 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>18 seconds (18715 ms)</td>
+<tr><td>Total time:</td><td>85 seconds (85067 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,420 +68,79 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
-<tr>
-<td title='tests.LoginPageTests.intialization()'><b>intialization</b><br>Test class: tests.LoginPageTests</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.microsoft.playwright.Page.locator(String)&quot; because &quot;page&quot; is null
-	at repository.LoginPage.&lt;init&gt;(LoginPage.java:28)
-	at tests.LoginPageTests.intialization(LoginPageTests.java:21)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace361571676", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace361571676'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.microsoft.playwright.Page.locator(String)&quot; because &quot;page&quot; is null
-	at repository.LoginPage.&lt;init&gt;(LoginPage.java:28)
-	at tests.LoginPageTests.intialization(LoginPageTests.java:21)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>tests.LoginPageTests@5ba88be8</td></tr>
-<tr>
-<td title='tests.CreateAccountTests.openBrowsser()'><b>openBrowsser</b><br>Test class: tests.CreateAccountTests</td>
-<td><div><pre>com.microsoft.playwright.PlaywrightException: Error {
-  message=&apos;Cookie should have a url or a domain/path pair
-  name=&apos;Error
-  stack=&apos;Error: Cookie should have a url or a domain/path pair
-    at assert (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\utils\isomorphic\assert.js:26:11)
-    at C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\network.js:63:29
-    at Array.map (&lt;anonymous&gt;)
-    at Object.rewriteCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\network.js:62:18)
-    at CRBrowserContext.addCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\chromium\crBrowser.js:346:80)
-    at BrowserContextDispatcher.addCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\browserContextDispatcher.js:230:25)
-    at BrowserContextDispatcher._handleCommand (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\dispatcher.js:88:40)
-    at DispatcherConnection.dispatch (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\dispatcher.js:309:39)
-}
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:56)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
-	at com.microsoft.playwright.impl.BrowserContextImpl.addCookies(BrowserContextImpl.java:322)
-	at generic.BaseTest.openBrowsser(BaseTest.java:33)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: com.microsoft.playwright.impl.DriverException: Error {
-  message=&apos;Cookie should have a url or a domain/path pair
-  name=&apos;Error
-  stack=&apos;Error: Cookie should have a url or a domain/path pair
-    at assert (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\utils\isomorphic\assert.js:26:11)
-    at C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\network.js:63:29
-    at Array.map (&lt;anonymous&gt;)
-    at Object.rewriteCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\network.js:62:18)
-    at CRBrowserContext.addCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\chromium\crBrowser.js:346:80)
-    at BrowserContextDispatcher.addCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\browserContextDispatcher.js:230:25)
-    at BrowserContextDispatcher._handleCommand (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\dispatcher.js:88:40)
-    at DispatcherConnection.dispatch (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\dispatcher.js:309:39)
-}
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:262)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
-	... 30 more
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace948395645", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace948395645'><pre>com.microsoft.playwright.PlaywrightException: Error {
-  message=&apos;Cookie should have a url or a domain/path pair
-  name=&apos;Error
-  stack=&apos;Error: Cookie should have a url or a domain/path pair
-    at assert (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\utils\isomorphic\assert.js:26:11)
-    at C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\network.js:63:29
-    at Array.map (&lt;anonymous&gt;)
-    at Object.rewriteCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\network.js:62:18)
-    at CRBrowserContext.addCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\chromium\crBrowser.js:346:80)
-    at BrowserContextDispatcher.addCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\browserContextDispatcher.js:230:25)
-    at BrowserContextDispatcher._handleCommand (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\dispatcher.js:88:40)
-    at DispatcherConnection.dispatch (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\dispatcher.js:309:39)
-}
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:56)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
-	at com.microsoft.playwright.impl.BrowserContextImpl.addCookies(BrowserContextImpl.java:322)
-	at generic.BaseTest.openBrowsser(BaseTest.java:33)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: com.microsoft.playwright.impl.DriverException: Error {
-  message=&apos;Cookie should have a url or a domain/path pair
-  name=&apos;Error
-  stack=&apos;Error: Cookie should have a url or a domain/path pair
-    at assert (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\utils\isomorphic\assert.js:26:11)
-    at C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\network.js:63:29
-    at Array.map (&lt;anonymous&gt;)
-    at Object.rewriteCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\network.js:62:18)
-    at CRBrowserContext.addCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\chromium\crBrowser.js:346:80)
-    at BrowserContextDispatcher.addCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\browserContextDispatcher.js:230:25)
-    at BrowserContextDispatcher._handleCommand (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\dispatcher.js:88:40)
-    at DispatcherConnection.dispatch (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\dispatcher.js:309:39)
-}
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:262)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
-	... 30 more
-</pre></div></td>
-<td>0</td>
-<td>tests.CreateAccountTests@38089a5a</td></tr>
-<tr>
-<td title='tests.LoginPageTests.openBrowsser()'><b>openBrowsser</b><br>Test class: tests.LoginPageTests</td>
-<td><div><pre>com.microsoft.playwright.PlaywrightException: Error {
-  message=&apos;Cookie should have a url or a domain/path pair
-  name=&apos;Error
-  stack=&apos;Error: Cookie should have a url or a domain/path pair
-    at assert (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\utils\isomorphic\assert.js:26:11)
-    at C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\network.js:63:29
-    at Array.map (&lt;anonymous&gt;)
-    at Object.rewriteCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\network.js:62:18)
-    at CRBrowserContext.addCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\chromium\crBrowser.js:346:80)
-    at BrowserContextDispatcher.addCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\browserContextDispatcher.js:230:25)
-    at BrowserContextDispatcher._handleCommand (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\dispatcher.js:88:40)
-    at DispatcherConnection.dispatch (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\dispatcher.js:309:39)
-}
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:56)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
-	at com.microsoft.playwright.impl.BrowserContextImpl.addCookies(BrowserContextImpl.java:322)
-	at generic.BaseTest.openBrowsser(BaseTest.java:33)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: com.microsoft.playwright.impl.DriverException: Error {
-  message=&apos;Cookie should have a url or a domain/path pair
-  name=&apos;Error
-  stack=&apos;Error: Cookie should have a url or a domain/path pair
-    at assert (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\utils\isomorphic\assert.js:26:11)
-    at C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\network.js:63:29
-    at Array.map (&lt;anonymous&gt;)
-    at Object.rewriteCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\network.js:62:18)
-    at CRBrowserContext.addCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\chromium\crBrowser.js:346:80)
-    at BrowserContextDispatcher.addCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\browserContextDispatcher.js:230:25)
-    at BrowserContextDispatcher._handleCommand (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\dispatcher.js:88:40)
-    at DispatcherConnection.dispatch (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\dispatcher.js:309:39)
-}
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:262)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
-	... 30 more
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1561745898", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1561745898'><pre>com.microsoft.playwright.PlaywrightException: Error {
-  message=&apos;Cookie should have a url or a domain/path pair
-  name=&apos;Error
-  stack=&apos;Error: Cookie should have a url or a domain/path pair
-    at assert (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\utils\isomorphic\assert.js:26:11)
-    at C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\network.js:63:29
-    at Array.map (&lt;anonymous&gt;)
-    at Object.rewriteCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\network.js:62:18)
-    at CRBrowserContext.addCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\chromium\crBrowser.js:346:80)
-    at BrowserContextDispatcher.addCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\browserContextDispatcher.js:230:25)
-    at BrowserContextDispatcher._handleCommand (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\dispatcher.js:88:40)
-    at DispatcherConnection.dispatch (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\dispatcher.js:309:39)
-}
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:56)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
-	at com.microsoft.playwright.impl.BrowserContextImpl.addCookies(BrowserContextImpl.java:322)
-	at generic.BaseTest.openBrowsser(BaseTest.java:33)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: com.microsoft.playwright.impl.DriverException: Error {
-  message=&apos;Cookie should have a url or a domain/path pair
-  name=&apos;Error
-  stack=&apos;Error: Cookie should have a url or a domain/path pair
-    at assert (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\utils\isomorphic\assert.js:26:11)
-    at C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\network.js:63:29
-    at Array.map (&lt;anonymous&gt;)
-    at Object.rewriteCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\network.js:62:18)
-    at CRBrowserContext.addCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\chromium\crBrowser.js:346:80)
-    at BrowserContextDispatcher.addCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\browserContextDispatcher.js:230:25)
-    at BrowserContextDispatcher._handleCommand (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\dispatcher.js:88:40)
-    at DispatcherConnection.dispatch (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\dispatcher.js:309:39)
-}
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:262)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
-	... 30 more
-</pre></div></td>
-<td>17</td>
-<td>tests.LoginPageTests@5ba88be8</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='tests.LoginPageTests.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.LoginPageTests</td>
-<td></td>
-<td>0</td>
-<td>tests.LoginPageTests@5ba88be8</td></tr>
-<tr>
-<td title='tests.CreateAccountTests.initiazition()'><b>initiazition</b><br>Test class: tests.CreateAccountTests</td>
-<td></td>
-<td>0</td>
-<td>tests.CreateAccountTests@38089a5a</td></tr>
-<tr>
-<td title='tests.CreateAccountTests.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.CreateAccountTests</td>
-<td></td>
-<td>0</td>
-<td>tests.CreateAccountTests@38089a5a</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='tests.CreateAccountTests.verifyResetPinElements()'><b>verifyResetPinElements</b><br>Test class: tests.CreateAccountTests<br>Test method: Verify that user is able to see all fields of reset pin page.</td>
-<td><div><pre>com.microsoft.playwright.PlaywrightException: Error {
-  message=&apos;Cookie should have a url or a domain/path pair
-  name=&apos;Error
-  stack=&apos;Error: Cookie should have a url or a domain/path pair
-    at assert (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\utils\isomorphic\assert.js:26:11)
-    at C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\network.js:63:29
-    at Array.map (&lt;anonymous&gt;)
-    at Object.rewriteCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\network.js:62:18)
-    at CRBrowserContext.addCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\chromium\crBrowser.js:346:80)
-    at BrowserContextDispatcher.addCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\browserContextDispatcher.js:230:25)
-    at BrowserContextDispatcher._handleCommand (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\dispatcher.js:88:40)
-    at DispatcherConnection.dispatch (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\dispatcher.js:309:39)
-}
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:56)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
-	at com.microsoft.playwright.impl.BrowserContextImpl.addCookies(BrowserContextImpl.java:322)
-	at generic.BaseTest.openBrowsser(BaseTest.java:33)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: com.microsoft.playwright.impl.DriverException: Error {
-  message=&apos;Cookie should have a url or a domain/path pair
-  name=&apos;Error
-  stack=&apos;Error: Cookie should have a url or a domain/path pair
-    at assert (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\utils\isomorphic\assert.js:26:11)
-    at C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\network.js:63:29
-    at Array.map (&lt;anonymous&gt;)
-    at Object.rewriteCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\network.js:62:18)
-    at CRBrowserContext.addCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\chromium\crBrowser.js:346:80)
-    at BrowserContextDispatcher.addCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\browserContextDispatcher.js:230:25)
-    at BrowserContextDispatcher._handleCommand (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\dispatcher.js:88:40)
-    at DispatcherConnection.dispatch (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\dispatcher.js:309:39)
-}
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:262)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
-	... 30 more
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace925568390", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace925568390'><pre>com.microsoft.playwright.PlaywrightException: Error {
-  message=&apos;Cookie should have a url or a domain/path pair
-  name=&apos;Error
-  stack=&apos;Error: Cookie should have a url or a domain/path pair
-    at assert (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\utils\isomorphic\assert.js:26:11)
-    at C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\network.js:63:29
-    at Array.map (&lt;anonymous&gt;)
-    at Object.rewriteCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\network.js:62:18)
-    at CRBrowserContext.addCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\chromium\crBrowser.js:346:80)
-    at BrowserContextDispatcher.addCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\browserContextDispatcher.js:230:25)
-    at BrowserContextDispatcher._handleCommand (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\dispatcher.js:88:40)
-    at DispatcherConnection.dispatch (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\dispatcher.js:309:39)
-}
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:56)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
-	at com.microsoft.playwright.impl.BrowserContextImpl.addCookies(BrowserContextImpl.java:322)
-	at generic.BaseTest.openBrowsser(BaseTest.java:33)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: com.microsoft.playwright.impl.DriverException: Error {
-  message=&apos;Cookie should have a url or a domain/path pair
-  name=&apos;Error
-  stack=&apos;Error: Cookie should have a url or a domain/path pair
-    at assert (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\utils\isomorphic\assert.js:26:11)
-    at C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\network.js:63:29
-    at Array.map (&lt;anonymous&gt;)
-    at Object.rewriteCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\network.js:62:18)
-    at CRBrowserContext.addCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\chromium\crBrowser.js:346:80)
-    at BrowserContextDispatcher.addCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\browserContextDispatcher.js:230:25)
-    at BrowserContextDispatcher._handleCommand (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\dispatcher.js:88:40)
-    at DispatcherConnection.dispatch (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\dispatcher.js:309:39)
-}
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:262)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
-	... 30 more
-</pre></div></td>
-<td>0</td>
-<td>tests.CreateAccountTests@38089a5a</td></tr>
 <tr>
 <td title='tests.LoginPageTests.loginIntoApplication()'><b>loginIntoApplication</b><br>Test class: tests.LoginPageTests<br>Test method: Verify that user is able to login to application with valid.</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.microsoft.playwright.Page.locator(String)&quot; because &quot;page&quot; is null
-	at repository.LoginPage.&lt;init&gt;(LoginPage.java:28)
-	at tests.LoginPageTests.intialization(LoginPageTests.java:21)
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Locator@img.logo element is not found expected [false] but found [true],
+	Locator@img.logo+p element is not found expected [false] but found [true],
+	Locator@div.india-flag-div&gt;img element is not found expected [false] but found [true],
+	Locator@div.india-flag-div&gt;p element is not found expected [false] but found [true],
+	Locator@//span[text()=&apos;Login PIN &apos;]/span element is not found expected [false] but found [true],
+	Locator@id=contactNumber element is not found expected [false] but found [true],
+	Locator@input.otp-input &gt;&gt; nth=0 element is not found expected [false] but found [true],
+	Locator@input.otp-input &gt;&gt; nth=1 element is not found expected [false] but found [true],
+	Locator@input.otp-input &gt;&gt; nth=2 element is not found expected [false] but found [true],
+	Locator@input.otp-input &gt;&gt; nth=3 element is not found expected [false] but found [true],
+	Locator@input.otp-input &gt;&gt; nth=4 element is not found expected [false] but found [true],
+	Locator@input.otp-input &gt;&gt; nth=5 element is not found expected [false] but found [true],
+	Locator@id=btn_login element is not found expected [false] but found [true],
+	Locator@span.forgot-pin &gt; a element is not found expected [false] but found [true],
+	Locator@//*[contains(text(),&apos;Are you &apos;)] element is not found expected [false] but found [true],
+	Locator@//button[text()=&apos;Create New Account&apos;] element is not found expected [false] but found [true],
+	Locator@p.newUserText element is not found expected [false] but found [true],
+	Locator@a.howToUseText element is not found expected [false] but found [true],
+	Locator@div.bg element is not found expected [false] but found [true],
+	Locator@internal:text=&quot;Incorrect username or password.&quot;i element is not found.
+	at generic.WebElementActions.isDisplayed(WebElementActions.java:26)
+	at repository.LoginPage.loginIntoApplication(LoginPage.java:79)
+	at tests.LoginPageTests.loginIntoApplication(LoginPageTests.java:38)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1590792382", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1590792382'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.microsoft.playwright.Page.locator(String)&quot; because &quot;page&quot; is null
-	at repository.LoginPage.&lt;init&gt;(LoginPage.java:28)
-	at tests.LoginPageTests.intialization(LoginPageTests.java:21)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1533672820", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1533672820'><pre>java.lang.AssertionError: The following asserts failed:
+	Locator@img.logo element is not found expected [false] but found [true],
+	Locator@img.logo+p element is not found expected [false] but found [true],
+	Locator@div.india-flag-div&gt;img element is not found expected [false] but found [true],
+	Locator@div.india-flag-div&gt;p element is not found expected [false] but found [true],
+	Locator@//span[text()=&apos;Login PIN &apos;]/span element is not found expected [false] but found [true],
+	Locator@id=contactNumber element is not found expected [false] but found [true],
+	Locator@input.otp-input &gt;&gt; nth=0 element is not found expected [false] but found [true],
+	Locator@input.otp-input &gt;&gt; nth=1 element is not found expected [false] but found [true],
+	Locator@input.otp-input &gt;&gt; nth=2 element is not found expected [false] but found [true],
+	Locator@input.otp-input &gt;&gt; nth=3 element is not found expected [false] but found [true],
+	Locator@input.otp-input &gt;&gt; nth=4 element is not found expected [false] but found [true],
+	Locator@input.otp-input &gt;&gt; nth=5 element is not found expected [false] but found [true],
+	Locator@id=btn_login element is not found expected [false] but found [true],
+	Locator@span.forgot-pin &gt; a element is not found expected [false] but found [true],
+	Locator@//*[contains(text(),&apos;Are you &apos;)] element is not found expected [false] but found [true],
+	Locator@//button[text()=&apos;Create New Account&apos;] element is not found expected [false] but found [true],
+	Locator@p.newUserText element is not found expected [false] but found [true],
+	Locator@a.howToUseText element is not found expected [false] but found [true],
+	Locator@div.bg element is not found expected [false] but found [true],
+	Locator@internal:text=&quot;Incorrect username or password.&quot;i element is not found.
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at generic.WebElementActions.isDisplayed(WebElementActions.java:26)
+	at repository.LoginPage.loginIntoApplication(LoginPage.java:79)
+	at tests.LoginPageTests.loginIntoApplication(LoginPageTests.java:38)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at org.testng.TestRunner.privateRun(TestRunner.java:739)
 	at org.testng.TestRunner.run(TestRunner.java:614)
@@ -499,113 +158,32 @@ Caused by: com.microsoft.playwright.impl.DriverException: Error {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>0</td>
+<td>30</td>
 <td>tests.LoginPageTests@5ba88be8</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
 <td title='tests.CreateAccountTests.verifyCreateAccountElements()'><b>verifyCreateAccountElements</b><br>Test class: tests.CreateAccountTests<br>Test method: Verify that user is able to see all fields of create account page.</td>
-<td><div><pre>com.microsoft.playwright.PlaywrightException: Error {
-  message=&apos;Cookie should have a url or a domain/path pair
-  name=&apos;Error
-  stack=&apos;Error: Cookie should have a url or a domain/path pair
-    at assert (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\utils\isomorphic\assert.js:26:11)
-    at C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\network.js:63:29
-    at Array.map (&lt;anonymous&gt;)
-    at Object.rewriteCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\network.js:62:18)
-    at CRBrowserContext.addCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\chromium\crBrowser.js:346:80)
-    at BrowserContextDispatcher.addCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\browserContextDispatcher.js:230:25)
-    at BrowserContextDispatcher._handleCommand (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\dispatcher.js:88:40)
-    at DispatcherConnection.dispatch (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\dispatcher.js:309:39)
-}
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:56)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
-	at com.microsoft.playwright.impl.BrowserContextImpl.addCookies(BrowserContextImpl.java:322)
-	at generic.BaseTest.openBrowsser(BaseTest.java:33)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: com.microsoft.playwright.impl.DriverException: Error {
-  message=&apos;Cookie should have a url or a domain/path pair
-  name=&apos;Error
-  stack=&apos;Error: Cookie should have a url or a domain/path pair
-    at assert (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\utils\isomorphic\assert.js:26:11)
-    at C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\network.js:63:29
-    at Array.map (&lt;anonymous&gt;)
-    at Object.rewriteCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\network.js:62:18)
-    at CRBrowserContext.addCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\chromium\crBrowser.js:346:80)
-    at BrowserContextDispatcher.addCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\browserContextDispatcher.js:230:25)
-    at BrowserContextDispatcher._handleCommand (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\dispatcher.js:88:40)
-    at DispatcherConnection.dispatch (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\dispatcher.js:309:39)
-}
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:262)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
-	... 30 more
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace834824701", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace834824701'><pre>com.microsoft.playwright.PlaywrightException: Error {
-  message=&apos;Cookie should have a url or a domain/path pair
-  name=&apos;Error
-  stack=&apos;Error: Cookie should have a url or a domain/path pair
-    at assert (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\utils\isomorphic\assert.js:26:11)
-    at C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\network.js:63:29
-    at Array.map (&lt;anonymous&gt;)
-    at Object.rewriteCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\network.js:62:18)
-    at CRBrowserContext.addCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\chromium\crBrowser.js:346:80)
-    at BrowserContextDispatcher.addCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\browserContextDispatcher.js:230:25)
-    at BrowserContextDispatcher._handleCommand (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\dispatcher.js:88:40)
-    at DispatcherConnection.dispatch (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\dispatcher.js:309:39)
-}
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:56)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
-	at com.microsoft.playwright.impl.BrowserContextImpl.addCookies(BrowserContextImpl.java:322)
-	at generic.BaseTest.openBrowsser(BaseTest.java:33)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: com.microsoft.playwright.impl.DriverException: Error {
-  message=&apos;Cookie should have a url or a domain/path pair
-  name=&apos;Error
-  stack=&apos;Error: Cookie should have a url or a domain/path pair
-    at assert (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\utils\isomorphic\assert.js:26:11)
-    at C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\network.js:63:29
-    at Array.map (&lt;anonymous&gt;)
-    at Object.rewriteCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\network.js:62:18)
-    at CRBrowserContext.addCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\chromium\crBrowser.js:346:80)
-    at BrowserContextDispatcher.addCookies (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\browserContextDispatcher.js:230:25)
-    at BrowserContextDispatcher._handleCommand (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\dispatcher.js:88:40)
-    at DispatcherConnection.dispatch (C:\Users\nanda\AppData\Local\Temp\playwright-java-12635121006539075792\package\lib\server\dispatchers\dispatcher.js:309:39)
-}
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:262)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
-	... 30 more
-</pre></div></td>
-<td>0</td>
+<td></td>
+<td>4</td>
 <td>tests.CreateAccountTests@38089a5a</td></tr>
+<tr>
+<td title='tests.CreateAccountTests.verifyResetPinElements()'><b>verifyResetPinElements</b><br>Test class: tests.CreateAccountTests<br>Test method: Verify that user is able to see all fields of reset pin page.</td>
+<td></td>
+<td>3</td>
+<td>tests.CreateAccountTests@38089a5a</td></tr>
+<tr>
+<td title='tests.LoginPageTests.verifyLoginPageElemets()'><b>verifyLoginPageElemets</b><br>Test class: tests.LoginPageTests<br>Test method: Verify that user is able to see all elements of login page.</td>
+<td></td>
+<td>0</td>
+<td>tests.LoginPageTests@5ba88be8</td></tr>
 </table><p>
 </body>
 </html>
