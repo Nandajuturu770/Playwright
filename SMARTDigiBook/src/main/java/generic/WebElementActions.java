@@ -28,6 +28,22 @@ public class WebElementActions extends Synchronize{
 	}
 
 	/**
+	 * @description this method is used to check the element is presented or not.
+	 * @param locator <code>Locator</code>
+	 * @return result <code>boolean</code>
+	 */
+	public static boolean checkElementIsPresented(Locator locator) {
+		try{
+			locator.isDisabled();
+			Allure.step(locator +" is displayed.");
+			return true;
+		}catch (Exception exception) {
+			Allure.step(locator +" is not displayed.");
+			return false;
+		}
+	}
+
+	/**
 	 * @description this method is used to click on element.
 	 * @param locator <code>Locator</code>
 	 */
@@ -40,7 +56,11 @@ public class WebElementActions extends Synchronize{
 			softAssert.assertAll();
 		}
 	}
-	
+
+	/**
+	 * @description this method is used to double
+	 * @param locator
+	 */
 	public static void doubleClick(Locator locator) {
 		try{
 			locator.dblclick();;

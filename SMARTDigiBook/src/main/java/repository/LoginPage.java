@@ -76,7 +76,7 @@ public class LoginPage extends WebElementActions{
 		passwordTxtfd.all().forEach(locator -> {int i = 0;enter(locator, password.charAt(i++)+"");});
 		click(loginBtn);
 		click(loginBtn);
-		if(isDisplayed(incorrectUsernameOrPasswordToaster)){
+		if(checkElementIsPresented(incorrectUsernameOrPasswordToaster)){
 			Allure.step("user credential is wrong -> mobile number :: "+mobileNumber+", password :: "+password);
 			Assert.fail();
 		}else {

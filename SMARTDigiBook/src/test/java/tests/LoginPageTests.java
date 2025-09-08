@@ -10,6 +10,7 @@ import com.microsoft.playwright.Page;
 import generic.BaseTest;
 import generic.DataReader;
 import repository.LoginPage;
+import static utils.DataReaderEnum.*;
 
 public class LoginPageTests extends BaseTest {
 
@@ -23,9 +24,9 @@ public class LoginPageTests extends BaseTest {
 	public void intialization() throws IOException {
 		this.page = BaseTest.page;
 		loginPage = new LoginPage(page);
-		dataReader = new DataReader("./src/main/resources/config.properties");
-		mobileNumber = dataReader.getValueOfKey("prod.username");
-		password = dataReader.getValueOfKey("prod.password");
+		dataReader = new DataReader(CONF_PATH.getDataReader());
+		mobileNumber = dataReader.getValueOfKey(PROD_USERNAME.getDataReader());
+		password = dataReader.getValueOfKey(PROD_PASSWORD.getDataReader());
 	}
 
 	@Test(enabled = true, priority = 1, description = "Verify that user is able to see all elements of login page.")
@@ -33,7 +34,7 @@ public class LoginPageTests extends BaseTest {
 		loginPage.verifyLoginPage();
 	}
 
-	@Test(enabled =  true, priority = 2, description = "Verify that user is able to login to application with valid.")
+	@Test(enabled = true, priority = 2, description = "Verify that user is able to login to application with valid.")
 	public void loginIntoApplication() throws InterruptedException {
 		loginPage.loginIntoApplication(mobileNumber, password);
 	}

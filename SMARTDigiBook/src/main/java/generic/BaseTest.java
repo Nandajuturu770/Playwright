@@ -1,5 +1,6 @@
 package generic;
 
+import java.io.IOException;
 import java.util.Arrays;
 
 import org.testng.annotations.AfterClass;
@@ -11,17 +12,23 @@ import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 import com.microsoft.playwright.options.Cookie;
+
+import static utils.DataReaderEnum.*;
+
 import com.microsoft.playwright.BrowserType.LaunchOptions;
 
 public class BaseTest {
 
+	private static DataReader dataReader;
 	private static Playwright playwright;
 	private static Browser browser;
 	private static BrowserContext browserContext;
-	public static Page page;
+	public  static Page page;
 
 	@BeforeClass
-	public void openBrowsser() {
+	public void openBrowsser() throws IOException {
+		// getting from properties file
+		dataReader = new DataReader(CONF_PATH.getDataReader());
 		playwright = Playwright.create();
 		BrowserType browserType = playwright.chromium();
 		LaunchOptions launchOptions = new LaunchOptions();
@@ -34,7 +41,7 @@ public class BaseTest {
 		cookie.setPath("/");
 		browserContext.addCookies(Arrays.asList(cookie));
 		page = browserContext.newPage();
-		page.navigate("https://reader.smartdigibook.com/");
+		page.navigate(dataReader.getValueOfKey(PROD_URL.getDataReader()));
 	}
 
 	@AfterClass
@@ -43,7 +50,7 @@ public class BaseTest {
 		browser.close();
 		playwright.close();
 	}
-	
+
 	public static BrowserContext getBrowserContext() {
 		return browserContext;
 	}

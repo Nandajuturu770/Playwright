@@ -9,6 +9,7 @@ import generic.BaseTest;
 import repository.CreateAccountPage;
 import repository.ForgetPasswordPage;
 import repository.LoginPage;
+import static utils.DataReaderEnum.PROD_USERNAME;;
 
 public class CreateAccountTests extends BaseTest{
 
@@ -35,7 +36,7 @@ public class CreateAccountTests extends BaseTest{
 	@Test(enabled = true, priority = 2, description = "Verify that user is able to see all fields of reset pin page.")
 	public void verifyResetPinElements() {
 		loginPage.navigateResetPinPage();
-		forgetPasswordPage.verifyAllElementOfForgetPasswordPage("7702425817");
+		forgetPasswordPage.verifyAllElementOfForgetPasswordPage(PROD_USERNAME.getDataReader());
 		forgetPasswordPage.navigaterLoginPage();
 	}
 
