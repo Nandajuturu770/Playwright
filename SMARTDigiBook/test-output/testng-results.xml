@@ -1,191 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-18T11:26:19 IST" name="Default suite" finished-at="2025-08-18T11:27:04 IST" duration-ms="45452">
+  <suite started-at="2025-09-08T11:59:58 IST" name="SMOKE Suite" finished-at="2025-09-08T12:01:10 IST" duration-ms="71974">
     <groups>
     </groups>
-    <test started-at="2025-08-18T11:26:19 IST" name="Default test" finished-at="2025-08-18T11:27:04 IST" duration-ms="45452">
-      <class name="locators.GetLocators">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:locators.GetLocators@1ed6388a]" started-at="2025-08-18T11:26:19 IST" name="openBrowser" finished-at="2025-08-18T11:27:04 IST" duration-ms="45403" status="FAIL">
-          <exception class="com.microsoft.playwright.TimeoutError">
-            <message>
-              <![CDATA[Error {
-  message='Timeout 30000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\progress.js:76:26)
-    at Frame.goto (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\frames.js:499:23)
-    at FrameDispatcher.goto (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\frameDispatcher.js:70:132)
-    at FrameDispatcher._handleCommand (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\dispatcher.js:88:40)
-    at DispatcherConnection.dispatch (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\dispatcher.js:309:39)
-}
-Call log:
--   - navigating to "https://reader.smartdigibook.com/", waiting until "load"
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 30000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\progress.js:76:26)
-    at Frame.goto (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\frames.js:499:23)
-    at FrameDispatcher.goto (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\frameDispatcher.js:70:132)
-    at FrameDispatcher._handleCommand (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\dispatcher.js:88:40)
-    at DispatcherConnection.dispatch (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\dispatcher.js:309:39)
-}
-Call log:
--   - navigating to "https://reader.smartdigibook.com/", waiting until "load"
-
-at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
-at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
-at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
-at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:419)
-at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:918)
-at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:42)
-at com.microsoft.playwright.Page.navigate(Page.java:5491)
-at locators.GetLocators.openBrowser(GetLocators.java:42)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 30000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\progress.js:76:26)
-    at Frame.goto (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\frames.js:499:23)
-    at FrameDispatcher.goto (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\frameDispatcher.js:70:132)
-    at FrameDispatcher._handleCommand (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\dispatcher.js:88:40)
-    at DispatcherConnection.dispatch (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\dispatcher.js:309:39)
-}
-Call log:
--   - navigating to "https://reader.smartdigibook.com/", waiting until "load"
-
-at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
-at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
-at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
-... 33 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+    <test started-at="2025-09-08T11:59:58 IST" name="Test" finished-at="2025-09-08T12:01:10 IST" duration-ms="71974">
+      <class name="tests.CreateAccountTests">
+        <test-method is-config="true" signature="openBrowsser()[pri:0, instance:tests.CreateAccountTests@38089a5a]" started-at="2025-09-08T12:00:51 IST" name="openBrowsser" finished-at="2025-09-08T12:01:02 IST" duration-ms="10432" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method signature="verifyCreateAccount()[pri:0, instance:locators.GetLocators@1ed6388a]" started-at="2025-08-18T11:27:04 IST" name="verifyCreateAccount" finished-at="2025-08-18T11:27:04 IST" duration-ms="0" status="SKIP">
-          <exception class="com.microsoft.playwright.TimeoutError">
-            <message>
-              <![CDATA[Error {
-  message='Timeout 30000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\progress.js:76:26)
-    at Frame.goto (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\frames.js:499:23)
-    at FrameDispatcher.goto (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\frameDispatcher.js:70:132)
-    at FrameDispatcher._handleCommand (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\dispatcher.js:88:40)
-    at DispatcherConnection.dispatch (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\dispatcher.js:309:39)
-}
-Call log:
--   - navigating to "https://reader.smartdigibook.com/", waiting until "load"
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 30000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\progress.js:76:26)
-    at Frame.goto (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\frames.js:499:23)
-    at FrameDispatcher.goto (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\frameDispatcher.js:70:132)
-    at FrameDispatcher._handleCommand (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\dispatcher.js:88:40)
-    at DispatcherConnection.dispatch (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\dispatcher.js:309:39)
-}
-Call log:
--   - navigating to "https://reader.smartdigibook.com/", waiting until "load"
-
-at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
-at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
-at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
-at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:419)
-at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:918)
-at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:42)
-at com.microsoft.playwright.Page.navigate(Page.java:5491)
-at locators.GetLocators.openBrowser(GetLocators.java:42)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 30000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\progress.js:76:26)
-    at Frame.goto (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\frames.js:499:23)
-    at FrameDispatcher.goto (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\frameDispatcher.js:70:132)
-    at FrameDispatcher._handleCommand (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\dispatcher.js:88:40)
-    at DispatcherConnection.dispatch (C:\Users\nanda\AppData\Local\Temp\playwright-java-12238697369041312290\package\lib\server\dispatchers\dispatcher.js:309:39)
-}
-Call log:
--   - navigating to "https://reader.smartdigibook.com/", waiting until "load"
-
-at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
-at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
-at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
-... 33 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+        </test-method> <!-- openBrowsser -->
+        <test-method is-config="true" signature="initiazition()[pri:0, instance:tests.CreateAccountTests@38089a5a]" started-at="2025-09-08T12:01:02 IST" name="initiazition" finished-at="2025-09-08T12:01:02 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCreateAccount -->
-      </class> <!-- locators.GetLocators -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- initiazition -->
+        <test-method signature="verifyCreateAccountElements()[pri:1, instance:tests.CreateAccountTests@38089a5a]" started-at="2025-09-08T12:01:02 IST" name="verifyCreateAccountElements" description="Verify that user is able to see all fields of create account page." finished-at="2025-09-08T12:01:06 IST" duration-ms="4299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateAccountElements -->
+        <test-method signature="verifyResetPinElements()[pri:2, instance:tests.CreateAccountTests@38089a5a]" started-at="2025-09-08T12:01:06 IST" name="verifyResetPinElements" description="Verify that user is able to see all fields of reset pin page." finished-at="2025-09-08T12:01:09 IST" duration-ms="3034" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyResetPinElements -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.CreateAccountTests@38089a5a]" started-at="2025-09-08T12:01:09 IST" name="closeBrowser" finished-at="2025-09-08T12:01:10 IST" duration-ms="997" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.CreateAccountTests -->
+      <class name="tests.LoginPageTests">
+        <test-method is-config="true" signature="openBrowsser()[pri:0, instance:tests.LoginPageTests@5ba88be8]" started-at="2025-09-08T11:59:58 IST" name="openBrowsser" finished-at="2025-09-08T12:00:20 IST" duration-ms="22134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowsser -->
+        <test-method is-config="true" signature="intialization()[pri:0, instance:tests.LoginPageTests@5ba88be8]" started-at="2025-09-08T12:00:20 IST" name="intialization" finished-at="2025-09-08T12:00:20 IST" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intialization -->
+        <test-method signature="verifyLoginPageElemets()[pri:1, instance:tests.LoginPageTests@5ba88be8]" started-at="2025-09-08T12:00:20 IST" name="verifyLoginPageElemets" description="Verify that user is able to see all elements of login page." finished-at="2025-09-08T12:00:21 IST" duration-ms="209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageElemets -->
+        <test-method signature="loginIntoApplication()[pri:2, instance:tests.LoginPageTests@5ba88be8]" started-at="2025-09-08T12:00:21 IST" name="loginIntoApplication" description="Verify that user is able to login to application with valid." finished-at="2025-09-08T12:00:51 IST" duration-ms="30338" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIntoApplication -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.LoginPageTests@5ba88be8]" started-at="2025-09-08T12:00:51 IST" name="closeBrowser" finished-at="2025-09-08T12:00:51 IST" duration-ms="329" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.LoginPageTests -->
+    </test> <!-- Test -->
+  </suite> <!-- SMOKE Suite -->
 </testng-results>
